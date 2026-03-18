@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta
+            name="description"
+            content="Simple weight converter app to convert MG, G, KG, and Ton."
+        />
+
+        <meta name="author" content="XDKOZ" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            rel="stylesheet"
+            href="styles/styles.css"
+            type="text/css"
+            media="all"
+        />
+        <title>Weight Converter</title>
+    </head>
+    <body>
+        <select id="mode-selector">
+            <option>KG</option>
+        </select>
+
+        <div class="inputs-wrapper">
+            <div class="input-wrapper1">
+                <select id="convert-selection">
+                    <option>MG</option>
+                    <option>G</option>
+                    <option>KG</option>
+                    <option>Ton</option>
+                </select>
+                <input
+                    type="text"
+                    id="convertInput"
+                    placeholder="type here..."
+                />
+            </div>
+            <h2>To</h2>
+            <div class="input-wrapper1">
+                <input
+                    type="text"
+                    id="convertedInput"
+                    readonly
+                    placeholder="Converted Area"
+                />
+                <select id="converted-selection">
+                    <option>MG</option>
+                    <option>G</option>
+                    <option>KG</option>
+                    <option>TON</option>
+                </select>
+            </div>
+        </div>
+        <button id="conv-btn" type="submit">Convert</button>
+
+        <script
+            src="script/script.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+    </body>
+</html>
